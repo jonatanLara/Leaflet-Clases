@@ -58,3 +58,9 @@ const geojsonLayer = L.geoJSON(geojson,
     }).addTo(map)
 
 console.log(geojson)
+
+setTimeout(()=>{
+    geojsonLayer.addData(nueveFeature)
+},3000)
+
+console.log(nueveFeature)

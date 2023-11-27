@@ -1,3 +1,15 @@
+const nueveFeature =
+{
+    "type": "Feature",
+    "properties": {'nombre': 'punto'},
+    "geometry": {
+        "coordinates": [
+            -90.53791123185785,
+            19.846479366771263
+        ],
+        "type": "Point"
+    }
+}
 const geojson = 
 {
     "type": "FeatureCollection",

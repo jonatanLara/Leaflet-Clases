@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto 2</title>
+</head>
+<body>
+    <div id="mapa">
+
+    </div>
+    <form action="">
+        <select class="form-select" name="" id="">
+            <option selected disabled>Elegir el tipo de entidad a crear</option>
+            <option value="marker">Marcador</option>
+            <option value="circleMarker">Circle Marker</option>
+            <option value="polyline">Line</option>
+            <option value="polygon">Poligono</option>
+        </select>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <div class="form-check form-switch mr-3">
+                <input type="checkbox" class="form-check-input" role="switch" id="checkbox">
+                <label for="checkbox" class="form-check-label">Agrupado</label>
+            </div>
+            <button type="button" class="btn btn-secondary float-end">Crear</button>
+        </div>
+    </form>
+    <div id="sidebar" class="d-flex justify-content-center align-items-center">
+        Actualmente no tiene información
+        
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/main.js"></script>
+    <script src="js/points.js"></script>
+    <script src="js/map.js"></script>
+    
+</body>
+</html> 

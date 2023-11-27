@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    background:whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#mapa{
+    width: 70%;
+    height: 100%;
+}
+#sidebar{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    background-color:  black;
+    width: 30%;
+    height: 100%;
+    color:whitesmoke;
+    max-height: 100%;
+    overflow: auto;
+    font-size: 0.7rem;
+    padding: 8px;
+    text-align: center;
+}
+#sidebar:hover{
+    cursor: pointer;
+}
+#sidebar:hover>.btn-copy{
+   opacity: 1;
+   display: block; 
+}
+form{
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.533);
+    border-radius: 10px;
+    color:white;
+    padding: 1rem;
+    z-index: 9999;
+    margin:0.4rem;
+}
+.myDivIcon{
+    color:red;
+    font-size: 22px;
+}
+/*Popus*/
+.popupContenet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+}
+.popupContenet button{
+    color:whitesmoke;
+    font-size: 8px;
+    border:0;
+    width: auto;
+    border-radius: 6px;
+    height: 1.5rem;
+    margin-top: 7px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.cancelar{
+    background-color: rgb(253, 80, 80);
+}
+.proceso{
+    background-color: rgb(87, 151, 87);
+}
+.btn-copy{
+    padding: 8px;
+    display: none;
+    transition: opacity 3s ease-out;
+    opacity: 0;
+}
